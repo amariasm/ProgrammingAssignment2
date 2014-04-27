@@ -9,15 +9,15 @@ makeCacheMatrix <- function(x = matrix()) {
     x <<- y
     inversa <<- NULL
   }
-  # Get de la matriz/matrix
+  # Get de la matriz/ get the matrix
   get <- function() x
   
   # Set inversa
   setinversa <- function(inverse) inversa <<- inverse
-  # Get de inversa/ get for the inverse
+  # Get de inversa
   getinversa <- function() inversa
  
-  # Devuelve la matriz con las nuevas functiones definidas/reurn the matrix with the new funtion
+  # Devuelve la matriz con las nuevas functiones definidas/reurn the matrix with the new funtions defined
   list(set = set, get = get, setinversa = setinversa, getinversa= getinversa)
 }
 
@@ -41,6 +41,6 @@ cacheSolve <- function(x, ...) {
   x$setinversa(inversa)
   
   
-# Devuelve la matriz/ Retrun the matix
+# Devuelve la matriz/ Return the matix
   inversa
 }

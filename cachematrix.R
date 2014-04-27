@@ -36,11 +36,9 @@ cacheSolve <- function(x, ...) {
   data <- x$get()
   inversa <- solve(data, ...)
   
-  
 # Toma la inversa/Get inversa
   x$setinversa(inversa)
-  
-  
+
 # Devuelve la matriz/ Return the matix
   inversa
 }
